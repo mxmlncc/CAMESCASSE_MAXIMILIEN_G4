@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sekigahara - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/edit-undo-brk');
+</style>
+</head>
+<header>
+    <div class="header">
+        <a href="index.html">
+            <h1>
+                MENU
+            </h1>
+        </a>
+    <nav>
+        <ul>
+            <li>
+                <a href="à_propos.html">à propos</a>
+            </li>
+            <li>
+                <a class="active" href="contact.html">contact</a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+</header>
+<body>
+    <main class="contact">
+        <section class="colonne">
+            <h2>Contactez-nous</h2>
+                <form action="https://api.web3forms.com/submit" method="post">
+                    <input type="hidden" name="access_key" value="c6449e0a-8c58-458f-bba1-a641c9f8e3d0"> <!--Je n'ai pas trouver de clé sur internet, j'ai utilisé celle de l'année dernière*/-->
+                    <input type="text" id="name" name="name" placeholder="Nom" required>
+
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+
+                    <textarea id="message" name="message" rows="2" placeholder="Message" required></textarea>
+
+                    <div class="button-container">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                    
+                </form>
+
+        </section>
+    </main>
+</body>
+<footer>
+    <h3>
+        2024. SEKIGAHARA.
+    </h3>
+</footer>
+</html>

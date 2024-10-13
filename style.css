@@ -1,0 +1,195 @@
+* {
+    margin: 0; /*Marge*/
+    padding: 0; /*Padding*/
+    font-family: 'Edit Undo BRK', sans-serif; /*Police*/
+}
+
+
+
+
+
+
+
+
+
+
+.header {
+    border-left: 8px solid #f2372a; /*Bordure gauche*/
+    border-right: 8px solid #f2372a; /*Bordure droite*/
+    background-color: rgb(51, 51, 51); /*Couleur d'arrière plan*/
+    display: flex; /*Aligne les éléments dans le header*/
+    justify-content: space-between; /*Permet l'espace entre le menu et la nav*/
+    align-items: center; /*Permet de centrer la nav*/
+}
+
+.header a {
+    color: white; /*Couleur*/
+    padding: 20px; /*Pour ne pas coller le texte au bord*/
+    text-decoration: none; /*Enlève le surlignage des liens*/
+  }
+
+ nav ul {
+    display: flex; /*Permet d'aligner la nav*/
+    font-size: 120%; /*Taille de la police*/
+    list-style-type: none; /*Enlève les puces des listes*/
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid white; /*Surlignage en hover*/
+    padding-bottom: 5px; /*L'espace entre le surlignage et la nav*/
+}
+
+nav ul li a.active {
+    border-bottom: 3px solid gold; /*Surlignage pour la page active*/
+    padding-bottom: 5px; /*L'espace entre le surlignage et la nav*/
+}
+
+
+
+
+
+
+
+
+
+
+body {
+    display: flex; /*Aligne les éléments dans le body*/
+    flex-direction: column; /*Direction en colonne*/
+    background-image: url('Samourai_Arrière_plan.jpg'); /*Image d'arrière plan*/
+    background-size: cover; /*Toute l'image doit être visible*/
+    background-position: center; /*Centre l'arrière plan*/
+    background-attachment: fixed; /*L'arrière plan ne bouge pas au défilement*/
+    min-height: 100vh; /*L'image doit prendre toute la fenêtre*/
+}
+
+main {
+    display: flex; /*Aligne les éléments dans la colonne*/
+    justify-content: center; /*Centre la colonne*/
+    padding-bottom: 70px; /*Padding*/
+    margin-top: 70vh; /*Marge*/
+    margin-bottom: 20vh; /*Marge*/
+}
+
+.about {
+    display: flex; /*Aligne les éléments dans la colonne*/
+    justify-content: center; /*Centre la colonne*/
+    padding-bottom: 70px; /*Padding*/
+    margin-top: 0vh; /*Marge*/
+    margin-bottom: 20vh; /*Marge*/
+}
+
+.contact {
+        display: flex; /*Aligne les éléments dans la colonne*/
+        justify-content: center; /*Centre la colonne*/
+        padding-bottom: 70px; /*Padding*/
+        margin-top: 20vh; /*Marge*/
+        margin-bottom: 20vh; /*Marge*/
+}
+
+.colonne {
+    text-align: center; /*Centre le texte*/
+    padding: 40px; /*Pour ne pas coller le texte au bord*/
+    background-color: rgba(51, 51, 51, 0.75); /*Couleur d'arrière plan avec une opacité de 0.8*/
+    max-width: 85%; /*Limite la largeur pour qu'elle ne s'étende pas trop horizontalement*/
+    border-radius: 20px; /*Angle de bordure*/
+
+}
+
+.colonne h2 {
+    color:#f2372a; /*Couleur*/
+    font-size: 70px; /*Taille de la police*/
+    margin-bottom: 60px; /*Marge*/
+    margin-top: 20px; /*Marge*/
+}
+
+.colonne h3 {
+    color: gold; /*Couleur*/
+    font-size: 50px; /*Taille de la police*/
+    margin-bottom: 60px; /*Marge*/
+    margin-top: 60px; /*Marge*/
+}
+
+.colonne h4 {
+    color: white; /*Couleur*/
+    font-size: 40px; /*Taille de la police*/
+    margin-bottom: 40px; /*Marge*/
+}
+
+hr {
+    width: 50%; /*Largeur du hr*/
+    margin: 0 auto; /*Centre le hr*/
+    border: 2px solid white; /*Epaisseur du hr */
+}
+
+.colonne img {
+    height: auto; /*Hauteur de l'image*/
+    width: 100%; /*Largeur de l'image*/
+    margin-bottom: 60px; /*Marge*/
+    border-radius: 20px; /*Angle de bordure*/
+}
+
+.colonne p {
+    color: white; /*Couleur*/
+    font-size: 32px; /*Taille de la police*/
+    margin-bottom: 20px; /*Marge*/
+}
+
+form {
+    display: flex; /*Aligne les éléments dans le form*/
+    flex-direction: column; /*Direction en colonne*/
+    max-width: 85%; /*Limite la largeur pour qu'elle ne s'étende pas trop horizontalement*/
+    margin: 0 auto; /*Centre le form */
+    padding-top: 20px; /*Padding*/
+    border-radius: 10px; /*Angle de bordure*/
+}
+
+form input, form textarea {
+    width: 100%; /*Largeur des inputs: Nom, Email et du textarea: Message*/
+    padding: 10px; /*Padding*/
+    margin-bottom: 20px; /*Marge*/
+    border: none; /*Supprime les bordures*/
+    border-radius: 5px; /*Angle de bordure*/
+    font-size: 18px; /*Taille de la police*/
+    background-color: rgba(255, 255, 255, 0.75); /*Couleur d'arrière plan avec une opacité de 0.75*/
+}
+
+.button-container {
+    display: flex; /*Aligne le bouton*/
+    justify-content: center; /* Centre le bouton*/
+    width: 100%; /*Largeur du bouton*/
+    margin-top: 20px; /*Marge*/
+}
+
+form button {
+    padding: 15px; /*Padding*/
+    background-color: #f2372a; /*Couleur d'arrière plan*/
+    color: white; /*Couleur*/
+    font-size: 20px; /*Taille de la police*/
+    border: none; /*Supprime les bordures*/
+    border-radius: 5px; /*Angle de bordure*/
+}
+
+form button:hover {
+    background-color: gold; /*Couleur d'arrière plan*/
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    /*Mets le footer en bas de la page*/
+    color: gold; /*Couleur*/
+    border-left: 8px solid #f2372a; /*Bordure gauche*/
+    border-right: 8px solid #f2372a; /*Bordure droite*/
+    background-color: #333; /*Couleur d'arrière plan*/
+    text-align: center;  /*Centre le texte*/
+    padding: 20px; /*Pour ne pas coller le texte au bord*/
+    position: relative; /*Assure que le footer reste bien en bas de page*/
+}
