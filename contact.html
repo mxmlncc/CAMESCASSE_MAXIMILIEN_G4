@@ -4,54 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sekigahara - Contact</title>
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <style>
         @import url('https://fonts.cdnfonts.com/css/edit-undo-brk');
 </style>
 </head>
-<header>
-    <div class="header">
-        <a href="index.html">
-            <h1>
-                MENU
-            </h1>
-        </a>
-    <nav>
-        <ul>
-            <li>
-                <a href="à_propos.html">à propos</a>
-            </li>
-            <li>
-                <a class="active" href="contact.html">contact</a>
-            </li>
-        </ul>
-    </nav>
-    </div>
-</header>
 <body>
-    <main class="contact">
-        <section class="colonne">
-            <h2>Contactez-nous</h2>
-                <form action="https://api.web3forms.com/submit" method="post">
-                    <input type="hidden" name="access_key" value="c6449e0a-8c58-458f-bba1-a641c9f8e3d0"> <!--Je n'ai pas trouver de clé sur internet, j'ai utilisé celle de l'année dernière*/-->
-                    <input type="text" id="name" name="name" placeholder="Nom" required>
+    <header>
+        <div class="header">
+            <a href="index.html">
+                <h1>MENU</h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="à_propos.html">à propos</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><button id="theme-toggle">Thème</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="contact">
+            <div class="colonne">
+                <h2>Formulaire de contact</h2>
+                <form id="form">
+                    <label for="pseudo">Pseudo</label>
+                    <input type="text" id="pseudo" name="pseudo" placeholder="Entrez votre pseudo">
+                    <span class="error-message" id="pseudo-error"></span>
+        
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre email">
+                    <span class="error-message" id="email-error"></span>
+        
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe">
+                    <span class="error-message" id="password-error"></span>
+        
+                    <label for="confirm-password">Confirmez le mot de passe</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmez votre mot de passe">
+                    <span class="error-message" id="confirm-password-error"></span>
 
-                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <label for="conditions">
+                        J'accepte les conditions
+                        <input type="checkbox" id="conditions" name="conditions">
+                        
+                    </label>
+                    <span class="error-message" id="conditions-error"></span>
 
-                    <textarea id="message" name="message" rows="2" placeholder="Message" required></textarea>
-
-                    <div class="button-container">
-                        <button type="submit">Envoyer</button>
+                    <div>
+                        <button type="button" id="submit">Envoyer</button>
                     </div>
-                    
                 </form>
-
-        </section>
+            </div>
+        </section>        
     </main>
+    <footer>
+        <h3>
+            2024. SEKIGAHARA.
+        </h3>
+    </footer>
 </body>
-<footer>
-    <h3>
-        2024. SEKIGAHARA.
-    </h3>
-</footer>
 </html>
